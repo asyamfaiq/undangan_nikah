@@ -1,478 +1,265 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="theme-color" content="#BC8887" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Invitation - Emil & Alman</title>
 
-    <title>Undangan Pernikahan Emil & Alman</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&family=Raleway:wght@300;600;800&display=swap" rel="stylesheet">
 
-    <meta property="og:title" content="Undangan Pernikahan Emil & Alman - 26 & 27 Desember 2025">
-    <meta property="og:description" content="Undangan Pernikahan Emil Zakiatul Musya'afah & Alman Saufi - Akad: 26 Desember 2025, Resepsi: 27 Desember 2025 di Ds. Cerme Kidul, Gg 2, Kec. Cerme, Kab. Gresik">
-    <meta property="og:locale" content="id_ID" />
-    <meta property="og:image" content="https://simple-wedding-invitation.dae.ng/image/samantha-gades-x40Q9jrEVT0-unsplash.jpg">
-    <meta property="og:url" content="http://contoh-undangan-Emil-Alman.com">
-    <meta name="twitter:card" content="summary_large_image">
+  <style>
+    :root {
+      --sage: #A3B18A;
+      --sage-dark: #588157;
+      --sage-light: #E8EDE2;
+      --brown-text: #3A4A3F;
+    }
 
-    <!-- Bulma Version 0.8.x-->
-    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/bulma-tooltip@0.1.5/dist/bulma-tooltip.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/menikah.css" />
-    <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--sage-light);
+      font-family: 'Raleway', sans-serif;
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--brown-text);
+      overflow-x: hidden;
+      
+      /* Background Watercolor */
+      background-image: url("https://i.ibb.co/k2Vvg3Y/watercolor-sage-leaves.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
 
-    <script
-      src="https://kit.fontawesome.com/2828f7885a.js"
-      crossorigin="anonymous"></script>
+    /* Fade-in universal */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1.4s ease-out forwards;
+    }
 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/jquery.coundown.js"></script>
-
-    <link rel="icon" type="image/png" href="image/favicon.png" />
-
-    <!-- Google Analytics (boleh dihapus jika tidak dipakai) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23064379-20"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-23064379-20');
-    </script>
-
-    <!-- Github Button (boleh dihapus) -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-</script>
-    
-  </head>
-
-  <body class="preloader-site">
-
-    <!-- Tombol Musik + Audio -->
-    <!-- Letakkan file Canon in D – Piano di: /audio/canon-in-d.mp3 -->
-    <button id="music-control" class="music-control" aria-label="Play/Pause Music">♫</button>
-    <audio id="wedding-audio" loop>
-      <source src="audio/canon-in-d.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
-
-    <!-- Begin Preloader -->
-    <div class="preloader-wrapper">
-      <div class="preloader">
-        <img src="image/favicon.png" alt="Flower" />
-      </div>
-    </div>
-    <!-- End Preloader-->
-
-    <!-- Begin Header -->
-    <div class="header-wrapper" id="home">
-      <!-- Begin Hero -->
-      <section class="hero is-large">
-        <!-- Begin Mobile Nav -->
-        <nav class="navbar is-transparent is-hidden-desktop">
-          <!-- Begin Burger Menu -->
-          <div class="navbar-brand is-fixed-top">
-            <div class="navbar-burger burger" data-target="mobile-nav">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-          <!-- End Burger Menu -->
-          <div id="mobile-nav" class="navbar-menu">
-            <div class="navbar-end">
-              <div class="navbar-item">
-                <a class="navbar-item" href="#Waktu">Waktu</a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#lokasi">Lokasi</a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#amplop-digital">Amplop Digital</a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#rsvp">RSVP</a>
-              </div>
-            </div>
-          </div>
-        </nav>
-        <!-- End Mobile Nav -->
-
-        <!-- Begin Hero Content-->
-        <div class="hero-body">
-          <div class="container has-text-centered">
-            <h1 class="subtitle">Undangan Pernikahan</h1>
-            <h2 class="title">Emil Zakiatul Musya'afah</h2>
-            <h2 class="title"> &amp;</h2>
-            <h2 class="title"> Alman Saufi</h2>
-            <h4 class="subtitle tempatwaktu">
-              Jumat – Sabtu, 26 – 27 Desember 2025
-              </br>
-              Ds. Cerme Kidul, Gg 2
-              </br>
-              Kec. Cerme, Kab. Gresik
-            </h4>
-          </div>
-
-          <!-- Start Countdown -->
-          <div>
-            <ul id="hitungmundur">
-              <li><span class="days">00</span><p class="days_text">Hari</p></li>
-              <li class="separator">:</li>
-              <li><span class="hours">00</span><p class="hours_text">Jam</p></li>
-              <li class="separator">:</li>
-              <li><span class="minutes">00</span><p class="minutes_text">Menit</p></li>
-              <li class="separator">:</li>
-              <li><span class="seconds">00</span><p class="seconds_text">Detik</p></li>
-            </ul>
-            <div class="spasi"></div>
-
-            <script type="text/javascript">
-              // Countdown menuju Resepsi: 27 Desember 2025, 16.00 WIB (GMT+7)
-              var harih = '12/27/2025 16:00:00';
-
-              $('#hitungmundur').countdown({
-                date: harih,
-                offset: +7,
-                day: 'Hari',
-                days: 'Hari'
-              }, function () {
-                // Callback ketika hitung mundur selesai (optional)
-              });
-            </script>
-          </div>
-          <!-- End Countdown -->
-        </div>
-        <!-- End Hero Content-->
-
-        <!-- Begin Hero Menu -->
-        <div class="hero-foot">
-          <div class="hero-foot--wrapper">
-            <div class="columns">
-              <div class="column is-12 hero-menu-desktop has-text-centered">
-                <ul>
-                  <li class="is-active"><a href="#home">Home</a></li>
-                  <li><a href="#Waktu">Waktu</a></li>
-                  <li><a href="#lokasi">Lokasi</a></li>
-                  <li><a href="#amplop-digital">Amplop Digital</a></li>
-                  <li><a href="#rsvp">RSVP</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End Hero Menu -->
-      </section>
-      <!-- End Hero -->
-    </div>
-    <!-- End Header -->
-
-    <!-- Begin Main Content -->
-    <div class="main-content">
-
-      <!-- Pengantar -->
-      <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content" id="regular-section">
-        <div data-aos="fade-up" data-aos-easing="linear">
-          <img src="image/bismillah.png" class="bismillah has-text-centered" alt="Bismillahirrahmaanirrahiim">
-        </div>
-
-        <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
-          Assalamu'alaikum Warahmatullahi Wabarakatuh.
-          <br />
-          Dengan memohon rahmat dan ridha Allah swt,
-          <br />
-          kami bermaksud mengundang Bapak/Ibu/Saudara/Saudari
-          <br />
-          pada acara pernikahan kami:
-        </p>
-
-        <span class="space40px"></span>
-        <span class="space40px"></span>
-
-        <div data-aos="fade-up" data-aos-easing="linear">
-          <div class="nama-lengkap">Emil Zakiatul Musya'afah</div>
-          <div class="ampersand">&amp;</div>
-          <div class="nama-lengkap">Alman Saufi</div>
-        </div>
-
-        <span class="space40px"></span>
-        <div data-aos="fade-up" data-aos-easing="linear">
-          <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
-        </div>
-        <span class="space40px"></span>
-        <span class="space40px"></span>
-      </section>
-
-      <!-- Waktu Section -->
-      <section class="section-dark" id="Waktu">
-        <div class="container">
-          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-            <h1 class="title has-text-centered section-title">Waktu</h1>
-          </div>
-
-          <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
-            <!-- Card Akad -->
-            <div class="column is-6 has-vertically-aligned-content">
-              <div class="box waktu-card">
-                <img src="image/icon-akad.png" alt="Icon Akad" class="waktu-icon">
-                <p class="waktu has-text-centered">
-                  <strong>Akad Nikah</strong><br><br>
-                  Jumat, 26 Desember 2025<br>
-                  <strong>09.00 WIB</strong><br><br>
-                  Ds. Cerme Kidul, Gg 2<br>
-                  Kec. Cerme, Kab. Gresik
-                </p>
-              </div>
-            </div>
-
-            <!-- Card Resepsi -->
-            <div class="column is-6 has-vertically-aligned-content">
-              <div class="box waktu-card">
-                <img src="image/icon-resepsi.png" alt="Icon Resepsi" class="waktu-icon">
-                <p class="waktu has-text-centered">
-                  <strong>Resepsi</strong><br><br>
-                  Sabtu, 27 Desember 2025<br>
-                  <strong>16.00 WIB – Selesai</strong><br><br>
-                  Ds. Cerme Kidul, Gg 2<br>
-                  Kec. Cerme, Kab. Gresik
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="space40px"></div>
-        <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-          <!-- Link Google Calendar masih placeholder -->
-          <a href="https://calendar.google.com/" target="_blank" class="button has-tooltip btn-cta" data-tooltip="Tambah ke Google Calendar" data-aos="zoom-in">
-            <i class="far fa-calendar-plus"></i>
-            &nbsp;&nbsp;Google Calendar
-          </a>
-        </div>
-      </section>
-      <!-- End Waktu -->
-
-      <!-- Lokasi Section -->
-      <section class="section-darker" id="lokasi">
-        <div class="container">
-          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-            <h1 class="title has-text-centered section-title">Lokasi Resepsi</h1>
-            <p class="tempat is-larger has-text-centered">
-              <strong>Ds. Cerme Kidul, Gg 2</strong>
-              <br>
-              Kec. Cerme, Kab. Gresik
-              <br>
-            </p>
-          </div>
-
-          <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
-            <!-- TODO: ganti src berikut dengan embed Google Maps lokasi resepsi Anda -->
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3958.0950465248657!2d112.56123977499946!3d-7.229999192776089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMTMnNDguMCJTIDExMsKwMzMnNDkuNyJF!5e0!3m2!1sen!2sid!4v1765085228752!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-              width="100%"
-              height="450"
-              frameborder="0"
-              style="border:0;"
-              allowfullscreen=""
-            ></iframe>
-          </div>
-
-          <div class="space40px"></div>
-          <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-            <!-- TODO: ganti href dengan link Google Maps lokasi resepsi -->
-            <a href="https://maps.app.goo.gl/MzLVinA1Yxk2qWyi8" class="button btn-cta" target="_blank" data-aos="zoom-in">
-              <i class="far fa-directions"></i>
-              &nbsp;&nbsp;Buka di Google Maps
-            </a>
-          </div>
-        </div>
-      </section>
-      <!-- End Lokasi -->
-
-      <!-- Amplop Digital Section -->
-      <section class="section-light regular-section has-text-centered" id="amplop-digital">
-        <div class="container" data-aos="fade-up" data-aos-easing="linear">
-          <h1 class="title has-text-centered section-title">Amplop Digital</h1>
-
-          <p class="bodytext">
-            Do'a restu Anda merupakan karunia yang sangat berarti bagi kami.
-            <br>
-            Jika memberi adalah bentuk kasih, Anda dapat 
-            <br>
-            memberikan kado secara cashless melalui rekening berikut:
-            <br>
-             
-            <br>
-          </p>
-
-          <span class="space40px"></span>
-
-          <div class="columns is-multiline">
-            
-            <!-- Card Mandiri -->
-            <div class="column is-6">
-              <div class="amplop-card box">
-                <p class="waktu">
-                  <strong>Bank Mandiri</strong><br>
-                  a.n. <strong>ALMAN SAUFI</strong><br>
-                  <span class="rekening-number dusty-pink-darkest">1780003162779</span>
-                </p>
-                <button 
-                  class="button btn-cta btn-copy"
-                  data-clipboard-text="1780003162779">
-                  <i class="far fa-copy"></i>&nbsp;Copy Rekening
-                </button>
-              </div>
-            </div>
-
-            <!-- Card BCA -->
-            <div class="column is-6">
-              <div class="amplop-card box">
-                <p class="waktu">
-                  <strong>Bank BCA</strong><br>
-                  a.n. <strong>ALMAN SAUFI</strong><br>
-                  <span class="rekening-number dusty-pink-darkest">7901422552</span>
-                </p>
-                <button 
-                  class="button btn-cta btn-copy"
-                  data-clipboard-text="7901422552">
-                  <i class="far fa-copy"></i>&nbsp;Copy Rekening
-                </button>
-              </div>
-            </div>
-
-          </div>
-
-          <span class="space40px"></span>
-          <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
-        </div>
-      </section>
-      <!-- End Amplop Digital -->
-
-      <!-- RSVP Section -->
-      <section class="section-dark contact" id="rsvp">
-        <div class="container">
-          <div class="columns is-multiline">
-            <div class="column is-12 prolog">
-              <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Konfirmasi Kehadiran</h1>
-            </div>
-
-            <div class="column is-12 prolog has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-              <p class="h2 subtitle">
-                Merupakan kehormatan dan kebahagiaan bagi kami
-                <br>
-                apabila Bapak/Ibu/Saudara/Saudari berkenan hadir
-                <br>
-                dan memberikan do'a restu untuk pernikahan kami.
-                <br><br>
-                Mohon konfirmasi kehadiran melalui WhatsApp berikut:
-              </p>
-
-              <a
-                href="https://api.whatsapp.com/send?phone=6281231087855&text=Assalamu%27alaikum%2C%20insyaaAllah%20saya%20hadir%20di%20acara%20walimatul%20urs%20Emil%20Zakiatul%20Musya%27afah%20%26%20Alman%20Saufi."
-                class="button btn-whatsapp"
-                target="_blank"
-                data-aos="zoom-in">
-                <i class="fab fa-whatsapp"></i>
-                &nbsp;&nbsp;Konfirmasi
-              </a>
-
-              <div class="space40px"></div>
-
-              <div data-aos="fade-up" data-aos-easing="linear">
-                <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
-              </div>
-
-              <div class="space40px"></div>
-              <p class="h2 subtitle" data-aos="fade-up" data-aos-easing="linear">
-                Kami yang berbahagia,
-                <br>
-                Emil Zakiatul Musya'afah &amp; Alman Saufi
-                <br><br>
-                <a class="instagram" href="https://www.instagram.com/alman.saufi" target="_blank">
-                  <i class="fab fa-instagram"></i> instagram
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End RSVP -->
-    </div>
-    <!-- End Main Content -->
-
-    <!-- Footer -->
-    <div class="footer">
-      <div class="container">
-        <p class="has-vertically-align">
-          2025 &copy; Emil &amp; Alman
-        </p>
-      </div>
-    </div>
-
-    <!-- Scripts -->
-    <!-- jQuery (kedua, versi 3.3.1 – bisa Anda rapikan nanti) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <!-- ClipboardJS: letakkan file clipboard.min.js di folder /js -->
-    <script src="js/clipboard.min.js"></script>
-
-    <!-- Script bawaan template -->
-    <script src="js/menikah.js"></script>
-
-    <!-- AOS Animation -->
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        easing: "ease-out",
-        duration: 800,
-      });
-    </script>
-
-    <!-- Inisialisasi ClipboardJS & Musik -->
-    <script>
-      // Inisialisasi ClipboardJS untuk tombol copy rekening
-      var clipboard = new ClipboardJS('.btn-copy');
-      clipboard.on('success', function(e) {
-        alert('Nomor berhasil disalin: ' + e.text);
-        e.clearSelection();
-      });
-
-      // Kontrol musik
-      document.addEventListener('DOMContentLoaded', function () {
-      const audio = document.getElementById('wedding-audio');
-      const btn = document.getElementById('music-control');
-      let started = false;
-
-      // Fungsi untuk mulai musik
-      function startMusic() {
-        if (!started) {
-          audio.volume = 1;
-          audio.play().then(() => {
-            btn.innerHTML = '⏸';
-            started = true;
-          }).catch(() => {});
-        }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
       }
+    }
 
-      // Autoplay setelah user berinteraksi
-      document.addEventListener('click', startMusic, { once: true });
-      document.addEventListener('scroll', startMusic, { once: true });
-      document.addEventListener('touchstart', startMusic, { once: true });
+    /* Wrapper */
+    .wrapper {
+        max-width: 650px;
+        margin: auto;
+        padding-top: 40px;
+        background: rgba(255, 255, 255, 0.55);
+        backdrop-filter: blur(4px);
+        border-radius: 20px;
+        padding: 50px 20px;
+        box-shadow: 0 8px 28px rgba(0,0,0,0.1);
+        animation-delay: 0.2s;
+        position: relative;
+        z-index: 1;   /* ini penting */
+    }
 
-      // Tombol Play / Pause
-      btn.addEventListener('click', function (e) {
-        e.stopPropagation(); // mencegah klik memicu autoplay event
 
-        if (audio.paused) {
-          audio.play();
-          btn.innerHTML = '⏸';
-        } else {
-          audio.pause();
-          btn.innerHTML = '♫';
+    .title-invited {
+      font-family: 'Rouge Script';
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: var(--sage-dark);
+      animation-delay: 0.4s;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+      color: #5a6a5d;
+      animation-delay: 0.6s;
+    }
+
+    .title-names {
+      font-family: 'Rouge Script';
+      font-size: 3.8rem;
+      margin: 10px 0 20px;
+      color: var(--sage-dark);
+      animation-delay: 0.8s;
+    }
+
+    .dear {
+      font-size: 1.4rem;
+      margin-top: 35px;
+      animation-delay: 1s;
+    }
+
+    .guest-name {
+      font-family: 'Rouge Script';
+      font-size: 2.7rem;
+      color: var(--brown-text);
+      margin-top: 5px;
+      animation-delay: 1.2s;
+    }
+
+    .open-btn {
+      padding: 14px 35px;
+      margin-top: 25px;
+      font-size: 1.1rem;
+      border-radius: 30px;
+      border: 2px solid var(--sage-dark);
+      background: var(--sage);
+      color: #fff;
+      cursor: pointer;
+      transition: .25s ease;
+      font-weight: 600;
+      animation-delay: 1.4s;
+    }
+
+    .open-btn:hover {
+      background: var(--sage-dark);
+      border-color: var(--sage-dark);
+      transform: translateY(-3px);
+    }
+
+    .note {
+      font-size: .85rem;
+      margin-top: 25px;
+      color: #4e5a4d;
+      opacity: 0.9;
+      animation-delay: 1.6s;
+    }
+
+        /* ===== Daun Mengambang ===== */
+
+    .leaf-layer {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0; /* di bawah wrapper */
+    }
+
+   .leaf {
+        position: absolute;
+        width: 140px;
+        opacity: 0.35;
+        animation-name: leafFloat;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        visibility: hidden; /* daun disembunyikan dulu */
+    }
+
+    /* Posisi & kecepatan berbeda-beda */
+    .leaf-1 {
+        left: 5%;
+        animation-duration: 16s;
+        animation-delay: 0s;
+    }
+
+    .leaf-2 {
+        left: 30%;
+        animation-duration: 18s;
+        animation-delay: 4s;
+    }
+
+    .leaf-3 {
+        left: 60%;
+        animation-duration: 20s;
+        animation-delay: 2s;
+    }
+
+    .leaf-4 {
+        left: 80%;
+        animation-duration: 10s;
+        animation-delay: 6s;
+    }
+    .leaf-5 {
+        left: 10%;
+        animation-duration: 10s;
+        animation-delay: 8s;
+    }
+    .leaf-6 {
+        left: 5%;
+        animation-duration: 10s;
+        animation-delay: 10s;
+    }
+    .leaf-7 {
+        left: 250%;
+        animation-duration: 10s;
+        animation-delay: 12s;
+    }
+    .leaf-8 {
+        left:70%;
+        animation-duration: 10s;
+        animation-delay: 14s;
+    }
+
+    /* Animasi daun turun pelan dari atas ke bawah */
+    @keyframes leafFloat {
+        0% {
+            visibility: visible;
+            transform: translateY(-20vh) translateX(0) rotate(0deg);
         }
-      });
-    });
-    </script>
-  </body>
+        50% {
+            transform: translateY(50vh) translateX(20px) rotate(8deg);
+        }
+        100% {
+            transform: translateY(120vh) translateX(-10px) rotate(16deg);
+        }
+    }
+
+    /* Responsif HP */
+    @media (max-width: 768px) {
+    .leaf {
+        width: 100px;
+        opacity: 0.3;
+    }
+    }
+
+  </style>
+</head>
+
+<body>
+
+    <!-- Layer daun mengambang -->
+    <div class="leaf-layer">
+    <img src="image/leaf-sage.png" alt="" class="leaf leaf-1">
+    <img src="image/leaf-sage.png" alt="" class="leaf leaf-2">
+    <img src="image/leaf-sage.png" alt="" class="leaf leaf-3">
+    <img src="image/leaf-sage.png" alt="" class="leaf leaf-5">
+    <img src="image/leaf-sage.png" alt="" class="leaf leaf-6">
+    <img src="image/leaf-sage.png" alt="" class="leaf leaf-7">
+    <img src="image/leaf-sage.png" alt="" class="leaf leaf-8">
+    </div>
+
+  <div class="wrapper fade-in">
+
+    <h2 class="title-invited fade-in">You Are Invited</h2>
+    <p class="subtitle fade-in">The Wedding Of</p>
+
+    <h1 class="title-names fade-in">Emil & Alman</h1>
+
+    <p class="dear fade-in">Dear.</p>
+    <p class="guest-name fade-in" id="guestName">Tamu Undangan</p>
+
+    <button class="open-btn fade-in" onclick="openInvitation()">Open Invitation</button>
+
+    <p class="note fade-in">Mohon maaf apabila ada kesalahan penulisan nama/gelar.</p>
+
+  </div>
+
+  <script>
+    // Ambil nama tamu dari URL (?to=Nama)
+    const urlParams = new URLSearchParams(window.location.search);
+    const guest = urlParams.get("to");
+
+    if (guest) {
+      document.getElementById("guestName").innerText = guest;
+    }
+
+    function openInvitation() {
+      window.location.href = "main.html?to=" + (guest ? guest : "");
+    }
+  </script>
+
+</body>
 </html>
