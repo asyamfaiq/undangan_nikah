@@ -827,14 +827,14 @@ body, p, strong, .waktu, .tempat, .bodytext, h1, h2, h3, h4 {
   width: auto !important;
 }
 
-/* === Override Hero Background + Text Shadow (Sage Green Version) === */
+/* === Override Hero Background === */
 
 .hero {
   background: linear-gradient(
       rgba(82, 121, 111, 0.30),
       rgba(82, 121, 111, 0.30)
     ),
-    url("https://picsum.photos/id/381/1920/1080") center/cover no-repeat fixed !important;
+    url("../image/bg-prewed.png") center/cover no-repeat fixed !important;
 }
 
 .hero .title,
